@@ -44,3 +44,7 @@ Este é um projeto estático, então não requer instalação.
 1. Baixe os arquivos do projeto.
 2. Dê dois cliques no arquivo `index.html`.
 3. Comece a postar seus patos!
+
+# Link no Github Pages
+
+**https://alexfsmelo.github.io/softeam-trainee/**
