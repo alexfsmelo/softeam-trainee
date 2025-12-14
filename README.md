@@ -21,7 +21,7 @@ Os dados dos posts são armazenados em uma lista de objetos com o seguinte forma
 | `imagem`    | String | Url da imagem          |
 
 ### Persistência de Dados
-Para garantir que as fotos não sumam ao fechar a janela, utilizamos o **LocalStorage** do navegador.
+Para garantir que as fotos não sumam ao fechar a janela é utilizado o **LocalStorage** do navegador.
 
 Como este armazenamento aceita apenas strings de texto, aplicamos a função `JSON.stringify` para converter nossa lista de objetos em texto antes de salvar. Ao carregar a página, fazemos o inverso com `JSON.parse`.
 
