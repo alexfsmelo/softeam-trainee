@@ -3,7 +3,7 @@ body {
 }
 
 .card {
-    background-color: lightgray;
+    background-color: #f4f4f4;
     padding: 20px;
     display: flex;
     gap: 20px;
@@ -55,6 +55,6 @@ button {
 
 footer {
     text-align: center;
-    background-color: #d1d1d1;
+    background-color: #f4f4f4;
     padding: 20px;
 }
