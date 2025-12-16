@@ -35,22 +35,29 @@ function renderizarFotos() {
 renderizarFotos();
 
 function adicionarFoto() {
+
     let nomeInput = document.getElementById("titulo");
     let descricaoInput = document.getElementById("descricao");
     let fotoInput = document.getElementById("link");
 
-    let novaFoto = {
-        titulo: nomeInput.value,
-        descricao: descricaoInput.value,
-        imagem: fotoInput.value
-    };
+    if (nomeInput.value === '' || descricaoInput.value === '' || fotoInput.value === '') {
+        alert("Quack! Por favor, preencha todos os campos.");
+        return;
+    } else {
 
-    fotosPatos.push(novaFoto);
-    localStorage.setItem("meus-patos", JSON.stringify(fotosPatos));
+        let novaFoto = {
+            titulo: nomeInput.value,
+            descricao: descricaoInput.value,
+            imagem: fotoInput.value
+        };
 
-    renderizarFotos();
-    
-    nomeInput.value = '';
-    descricaoInput.value = '';
-    fotoInput.value = '';
+        fotosPatos.push(novaFoto);
+        localStorage.setItem("meus-patos", JSON.stringify(fotosPatos));
+
+        renderizarFotos();
+        
+        nomeInput.value = '';
+        descricaoInput.value = '';
+        fotoInput.value = '';
+    }
 }
